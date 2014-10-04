@@ -1,0 +1,11 @@
+name: pivotal-tracker-mark-as-delivered
+version: 0.0.1
+description: Mark Pivotal Tracker finished stories with commits containing their ids as delivered.
+keywords:
+  - pivotal_tracker
+properties:
+  project_id:
+    type: number
+    required: true
+  github_oauth_token:
+    type: string
