@@ -14,3 +14,5 @@ deploy:
             project_id: 1234567
             github_oauth_token: $GITHUB_OAUTH_TOKEN
 ```
+
+[![wercker status](https://app.wercker.com/status/3cc6767311aba006ede3e1ac37434a1b/m "wercker status")](https://app.wercker.com/project/bykey/3cc6767311aba006ede3e1ac37434a1b)
