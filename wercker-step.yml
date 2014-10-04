@@ -7,5 +7,9 @@ properties:
   project_id:
     type: number
     required: true
+  token:
+    type: string
+    required: true
   github_oauth_token:
     type: string
+    required: false
