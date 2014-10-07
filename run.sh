@@ -8,8 +8,7 @@ if [ ! -n "$WERCKER_PIVOTAL_TRACKER_MARK_AS_DELIVERED_TOKEN" ]; then
   exit 1
 fi
 
-git clone https://$WERCKER_PIVOTAL_TRACKER_MARK_AS_DELIVERED_GITHUB_OAUTH_TOKEN:x-oauth-basic@github.com/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY.git /pipeline/repo
-pushd /pipeline/repo
+pushd $WERCKER_SOURCE_DIR
 git checkout -fq $WERCKER_GIT_COMMIT
 git submodule update --init --recursive
 gem install tracker-git -v 0.0.5 --no-ri --no-rdoc
