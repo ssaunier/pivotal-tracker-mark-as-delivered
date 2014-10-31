@@ -1,11 +1,11 @@
 if [ ! -n "$WERCKER_PIVOTAL_TRACKER_MARK_AS_DELIVERED_PROJECT_ID" ]; then
-  error 'Please specify a pivotal tracker project-id param'
-  exit 1
+  echo 'Please specify a pivotal tracker project-id param'
+  exit
 fi
 
 if [ ! -n "$WERCKER_PIVOTAL_TRACKER_MARK_AS_DELIVERED_TOKEN" ]; then
-  error 'Please specify your Pivotal Tracker API token (through an environment variable !)'
-  exit 1
+  echo 'Please specify your Pivotal Tracker API token (through an environment variable !)'
+  exit
 fi
 
 pushd $WERCKER_SOURCE_DIR
